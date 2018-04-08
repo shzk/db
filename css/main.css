@@ -214,7 +214,7 @@ pre code {
   border-style: solid;
   border-radius: 22px;
   height: 2.75em;
-  /*padding-top: 0.68em;*/
+  padding-top: 0.68em;
   padding-left: 1.25em;
   padding-right: 1.25em;
   color: #037EC6;
@@ -223,6 +223,10 @@ pre code {
   text-decoration: none;
   font-weight: 700;
 }
+input.button {
+  line-height: 1;
+  padding-top: 0;
+} 
 .button:hover,
 .button:focus {
   border-color: #DDE8EE;
@@ -613,7 +617,7 @@ a.button--login:active {
   background-color: #b51919;
   border-radius: 5px;
   color: #FFF;
-  padding: 14px 15px 13px;
+  padding: 5px 15px;
 }
 .error--with-desc {
   border-radius: 5px 5px 0 0;
@@ -640,6 +644,20 @@ a.button--login:active {
 .error-description p a {
   color: #38505E;
 }
+
+
+.info-success {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.3;
+  background-color: #5EB64D;
+  border-radius: 5px;
+  color: #FFF;
+  padding: 5px 15px;
+}
+
+
 .form {
   border: none;
   background-color: transparent;
