@@ -1,4 +1,5 @@
 <?php 
+require('functions/login_functions.php');
 
 $errors = array();
 

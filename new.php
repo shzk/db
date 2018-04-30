@@ -1,6 +1,7 @@
 <?php 
 
 require('config.php');
+require('functions/login_functions.php');
 // DB CONNECTION
 require('database.php');
 $link = db_connect();

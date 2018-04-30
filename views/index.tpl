@@ -11,10 +11,13 @@
                 <div class="col-8">
                     <div class="card__header">
                         <h4 class="title-4"><?=$film['name']?></h4>
-                        <div class="buttons">
-                            <a href="edit.php?id=<?=$film['id']?>" class="button button--edit">Редактировать</a>
-                            <a href="?action=delete&id=<?=$film['id']?>" class="button button--delete">Удалить</a>
-                        </div>
+                        <?php
+                            if (isAdmin()) {?>
+                                <div class="buttons">
+                                    <a href="edit.php?id=<?=$film['id']?>" class="button button--edit">Редактировать</a>
+                                    <a href="?action=delete&id=<?=$film['id']?>" class="button button--delete">Удалить</a>
+                                </div>
+                        <?php } ?>
                     </div>
                     <div class="badge"><?=$film['genre']?></div>
                     <div class="badge"><?=$film['year']?></div>

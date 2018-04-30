@@ -5,5 +5,5 @@ define('MYSQL_PASSWORD', 'root');
 define('MYSQL_DB', 'filmoteka');
 define('HOST', 'http://'.$_SERVER['HTTP_HOST'].'/db/');
 define('ROOT', dirname(__FILE__) . '/');
-// phpinfo();
+session_start(); 
 ?>
